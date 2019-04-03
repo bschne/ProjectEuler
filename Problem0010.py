@@ -15,7 +15,7 @@ def eratosthenes(upper_bound):
             while i ** 2 + j * i <= upper_bound:
                 primes[i ** 2 + j * i] = False
                 j += 1
-    
+
         i += 1
 
     ret = []
@@ -38,5 +38,3 @@ def solve(input_no):
 if __name__ == "__main__":
     input_no = 2000000
     print(solve(input_no))
-    # print(eratosthenes(10))
-    # print(eratosthenes(150))
